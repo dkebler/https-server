@@ -1,0 +1,22 @@
+{
+  "name": "https-server",
+  "version": "1.0.0",
+  "description": "Basic secure server using nodejs https",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "https",
+    "ssl"
+  ],
+  "author": "dkebler",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "local-web-server": "^2.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

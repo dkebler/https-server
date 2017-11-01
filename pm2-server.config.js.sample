@@ -1,0 +1,25 @@
+// PM2 Start file
+// pm2 start server.config.js
+// pm2 startup
+// for 80/443 install pm2 globally as root and preface with sudo
+module.exports = {
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+    // Start Reverse Proxy
+    {
+      name      : 'https-server',
+      cwd       : '/opt/lights/server',
+      script    : './index.js',
+      watch     : true
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+
+}

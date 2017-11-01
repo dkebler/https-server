@@ -1,0 +1,11 @@
+module.exports = {
+  cert: {
+    path: '',  // required - path on local machine to certificates
+    name: ''  // required - filename of certificate (extension .crt is added)
+  // ,ca: ''  // file name of intermediate(i.e. ca) certificate in same path, not needed if using a real ca in a browser, .crt is added
+  }
+  , webRoot: ''  // uses current working direct if not supplied
+  //, hostname:''   // will use cert.name if not supplied given certificate name matches exactly the hostname
+  , httpPort: 80  // 8080 if not supplied,  if using port 80 must be linux root user
+  , httpsPort: 443  // 8443 if not supplied,, if using port 443 must be linux root user
+}
